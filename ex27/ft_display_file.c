@@ -16,19 +16,21 @@
 
 void	display_file_content(const char *filename)
 {
-	int fd = open(filename, O_RDONLY);
-	if (fd < 0)
-	{
-		write(2, "Cannot read file.\n", 18);
-		return;
-	}
-	
+	int		fd;
 	char	buffer[BUFFER_SIZE];
 	ssize_t	bytes_read;
 
-	while ((bytes_read = read(fd, buffer, BUFFER_SIZE)) > 0)
+	fd = open(filename, O_RDONLY);
+	if (fd < 0)
+	{
+		write(2, "Cannot read file.\n", 18);
+		return ;
+	}
+	bytes_read = read(fd, buffer, BUFFER_SIZE);
+	while (bytes_read > 0)
 	{
 		write(1, buffer, bytes_read);
+		bytes_read = read(fd, buffer, BUFFER_SIZE);
 	}
 	close(fd);
 }
