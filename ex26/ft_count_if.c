@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_count_if(char **tab, int (*f)(char *))
+int	ft_count_if(char **tab, int (*f)(char*))
 {
 	int	count;
 	int	i;
@@ -19,7 +19,7 @@ int	ft_count_if(char **tab, int (*f)(char *))
 	i = 0;
 	while (tab[i] != 0)
 	{
-		if ((*f)(&tab[i]) == 1)
+		if (f(tab[i]) == 1)
 			count++;
 		i++;
 	}

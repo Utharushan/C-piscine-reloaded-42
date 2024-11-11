@@ -3,28 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: tuthayak <tuthayak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 22:12:11 by marvin            #+#    #+#             */
-/*   Updated: 2024/11/04 22:12:11 by marvin           ###   ########.fr       */
+/*   Created: 2024/11/11 18:28:08 by tuthayak          #+#    #+#             */
+/*   Updated: 2024/11/11 18:28:08 by tuthayak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
+void	ft_putchar(char c);
+
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
-		write(1, "P", 1);
+		ft_putchar('P');
 	else
-		write(1, "N", 1);
+		ft_putchar('N');
 }
-/*
-#include <stdlib.h>
-int	main(int ac, char *av[])
-{
-	if (ac == 2)
-	{
-		ft_is_negative(atoi(av[1]));
-	}
-}
-*/
