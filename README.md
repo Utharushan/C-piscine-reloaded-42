@@ -1,9 +1,13 @@
-# Ecole 42
-École 42, founded by Xavier Niel in 2013, is an innovative, tuition-free coding school based in Paris with global campuses.\
-It emphasizes peer-to-peer learning and project-based curriculum, focusing on real-world skills.\
-Admission is based on potential and motivation, not academic background.\
-Candidates undergo an intensive four-week selection process called "La Piscine" to demonstrate their aptitude and dedication.\
-Graduates are highly sought after in the tech industry for their technical expertise and adaptability.\
-The school's unique approach and commitment to accessibility make it a leader in tech education.
+# C-piscine-reloaded
 
-On this repository can be found some of the exercises that were asked during the Piscine. It is a refresher project at the beginning of the 42 curriculum.
+This repository contains some of the exercises that were part of the **Piscine**, it is a refresher project at the beginning of the **42 curriculum**. The Piscine is an intensive coding bootcamp designed to familiarize new students with the C programming language and essential coding skills. This repository is a collection of solutions and exercises from that experience.
+
+## Purpose
+
+The goal of the **C-piscine-reloaded** repository is to provide a set of practical exercises to reinforce key programming concepts in C, such as:
+
+- Basic syntax and structures
+- Memory management
+- Algorithmic problem-solving
+- Use of C libraries
+- Debugging techniques
